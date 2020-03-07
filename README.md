@@ -1,6 +1,6 @@
 ﻿# Yanport .NET Client
 
-[![Build Status](https://dev.azure.com/devprofr/open-source/_apis/build/status/libraries/yanport-dotnet-client-ci?branchName=master)](https://dev.azure.com/devprofr/open-source/_build/latest?definitionId=XX&branchName=master)
+[![Build Status](https://dev.azure.com/devprofr/open-source/_apis/build/status/libraries/yanport-dotnet-client-ci?branchName=master)](https://dev.azure.com/devprofr/open-source/_build/latest?definitionId=35&branchName=master)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=devpro.yanport.dotnetclient&metric=alert_status)](https://sonarcloud.io/dashboard?id=devpro.yanport.dotnetclient)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=devpro.yanport.dotnetclient&metric=coverage)](https://sonarcloud.io/dashboard?id=devpro.yanport.dotnetclient)
 
