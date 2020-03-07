@@ -31,7 +31,7 @@ namespace Devpro.Yanport.Client.Repositories
 
         protected virtual async Task<T> GetAsync<T>(string url) where T : class
         {
-            var client = HttpClientFactory.CreateClient(Configuration.ClientName);
+            var client = HttpClientFactory.CreateClient(Configuration.HttpClientName);
 
             var response = await client.GetAsync(url);
 

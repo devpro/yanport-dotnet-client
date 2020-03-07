@@ -1,11 +1,25 @@
 ﻿namespace Devpro.Yanport.Client
 {
-    public class IYanportClientConfiguration
+    /// <summary>
+    /// Client library configuration.
+    /// It's up to the application that uses this library to decide where to store and read the configuration values.
+    /// </summary>
+    public interface IYanportClientConfiguration
     {
-        public string BaseUrl { get; set; }
+        /// <summary>
+        /// Yanport base URL.
+        /// </summary>
+        public string BaseUrl { get; }
 
-        public string Token { get; set; }
+        /// <summary>
+        /// Yanport token.
+        /// </summary>
+        public string Token { get; }
 
-        public string ClientName { get; set; }
+        /// <summary>
+        /// HTTP client name, this is a pure technical name, free text only used internally in the application.
+        /// Make sure it's unique to prevent any conflict with another HTTP Client.
+        /// </summary>
+        public string HttpClientName { get; }
     }
 }

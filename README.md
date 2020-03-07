@@ -89,3 +89,7 @@ And execute all tests (unit and integration ones):
 ```bash
 dotnet test --settings Local.runsettings
 ```
+
+## References
+
+- [API Documentation](https://www.yanport.com/data/api/documentation)

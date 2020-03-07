@@ -18,6 +18,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solutions Items", "Solution
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yanport.Abstractions", "src\Yanport.Abstractions\Yanport.Abstractions.csproj", "{DD0244BC-117C-43D5-8B53-1BC6ACB563F8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yanport.Client.UnitTests", "test\Yanport.Client.UnitTests\Yanport.Client.UnitTests.csproj", "{0E3F4B58-C2B7-4DBE-B674-B60A69489E91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yanport.Client.IntegrationTests", "test\Yanport.Client.IntegrationTests\Yanport.Client.IntegrationTests.csproj", "{A0BF1D34-9BE3-43A3-9034-597280CA420A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +36,14 @@ Global
 		{DD0244BC-117C-43D5-8B53-1BC6ACB563F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD0244BC-117C-43D5-8B53-1BC6ACB563F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD0244BC-117C-43D5-8B53-1BC6ACB563F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E3F4B58-C2B7-4DBE-B674-B60A69489E91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E3F4B58-C2B7-4DBE-B674-B60A69489E91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E3F4B58-C2B7-4DBE-B674-B60A69489E91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E3F4B58-C2B7-4DBE-B674-B60A69489E91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0BF1D34-9BE3-43A3-9034-597280CA420A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0BF1D34-9BE3-43A3-9034-597280CA420A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0BF1D34-9BE3-43A3-9034-597280CA420A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0BF1D34-9BE3-43A3-9034-597280CA420A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

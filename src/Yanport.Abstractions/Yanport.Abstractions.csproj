@@ -17,7 +17,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
+    <PackageReference Include="Withywoods.Serialization" Version="1.2.2" />
   </ItemGroup>
   
 </Project>
