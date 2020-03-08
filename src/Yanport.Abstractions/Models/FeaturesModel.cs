@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace Devpro.Yanport.Abstractions.Models
+﻿namespace Devpro.Yanport.Abstractions.Models
 {
     public class FeaturesModel
     {

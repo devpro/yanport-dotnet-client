@@ -18,7 +18,7 @@ Package | Version | Type
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
-    <PackageReference Include="`Devpro.Yanport" Version="X.Y.Z" />
+    <PackageReference Include="Devpro.Yanport.Client" Version="X.Y.Z" />
   </ItemGroup>
 </Project>
 ```
@@ -62,6 +62,8 @@ public async Task GetProperties()
 ```
 
 ## How to build
+
+Once the git repository has been cloned, execute the following commands from the root directory:
 
 ```bash
 dotnet restore
