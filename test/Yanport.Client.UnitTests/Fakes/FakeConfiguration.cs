@@ -1,13 +1,12 @@
-﻿using System;
-
-namespace Devpro.Yanport.Client.UnitTests.Fakes
+﻿namespace Devpro.Yanport.Client.UnitTests.Fakes
 {
-    public class FakeConfiguration : IYanportClientConfiguration
+    public class FakeConfiguration : DefaultYanportClientConfiguration
     {
-        public string BaseUrl => "http://doesnotexist.nop";
-
-        public string Token => "someuselessstring";
-
-        public string HttpClientName => "MyFakeClient";
+        public FakeConfiguration()
+        {
+            BaseUrl = "http://doesnotexist.nop";
+            Token = "someuselessstring";
+            HttpClientName = "MyFakeClient";
+        }
     }
 }

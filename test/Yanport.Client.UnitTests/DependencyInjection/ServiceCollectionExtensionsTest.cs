@@ -1,4 +1,5 @@
-﻿using System.Net.Http;
+﻿using System;
+using System.Net.Http;
 using Devpro.Yanport.Client.DependencyInjection;
 using Devpro.Yanport.Client.UnitTests.Fakes;
 using FluentAssertions;
@@ -43,6 +44,36 @@ namespace Devpro.Yanport.Client.UnitTests.DependencyInjection
             httpClientFactory.Should().NotBeNull();
             var client = httpClientFactory.CreateClient(configuration.HttpClientName);
             client.Should().NotBeNull();
+        }
+
+        [Fact]
+        public void AddYanportClient_ShouldThrowExceptionIfServiceCollectionIsNull()
+        {
+            // Arrange
+            var serviceCollection = (ServiceCollection)null;
+            var configuration = new FakeConfiguration();
+
+            // Act
+            var exc = Assert.Throws<ArgumentNullException>(() => serviceCollection.AddYanportClient(configuration));
+
+            // Assert
+            exc.Should().NotBeNull();
+            exc.Message.Should().Be("Value cannot be null. (Parameter 'services')");
+        }
+
+        [Fact]
+        public void AddYanportClient_ShouldThrowExceptionIfConfigurationIsNull()
+        {
+            // Arrange
+            var serviceCollection = new ServiceCollection();
+            var configuration = (FakeConfiguration)null;
+
+            // Act
+            var exc = Assert.Throws<ArgumentNullException>(() => serviceCollection.AddYanportClient(configuration));
+
+            // Assert
+            exc.Should().NotBeNull();
+            exc.Message.Should().Be("Value cannot be null. (Parameter 'configuration')");
         }
     }
 }

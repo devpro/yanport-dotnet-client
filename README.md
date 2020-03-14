@@ -1,4 +1,4 @@
-﻿# Yanport .NET Client
+# Yanport .NET Client
 
 [![Build Status](https://dev.azure.com/devprofr/open-source/_apis/build/status/libraries/yanport-dotnet-client-ci?branchName=master)](https://dev.azure.com/devprofr/open-source/_build/latest?definitionId=35&branchName=master)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=devpro.yanport.dotnetclient&metric=alert_status)](https://sonarcloud.io/dashboard?id=devpro.yanport.dotnetclient)
@@ -26,12 +26,12 @@ Package | Version | Type
 - Make the code changes to be able to use the library (config & service provider)
 
 ```csharp
-// implement the configuration interface (for instance in a configuration class in your app project)
+// implement the configuration interface (for instance in a configuration class in your app project) or use DefaultYanportClientConfiguration
 using Devpro.Yanport.Client;
 
 public class AppConfiguration : IYanportClientConfiguration
 {
-    // explicitely choose where to take the configuration for 2hire REST API (this is the responibility of the app, not the library)
+    // explicitely choose where to take the configuration for Yanport REST API (this is the responibility of the app, not the library)
 }
 
 // configure your service provider (for instance in your app Startup class)

@@ -24,7 +24,12 @@ namespace Devpro.Yanport.Client.DependencyInjection
                 throw new ArgumentNullException(nameof(services));
             }
 
-            services.TryAddTransient<IYanportClientConfiguration, T>();
+            if (configuration == null)
+            {
+                throw new ArgumentNullException(nameof(configuration));
+            }
+
+            services.TryAddSingleton<IYanportClientConfiguration>(configuration);
             services.TryAddTransient<Abstractions.Repositories.IPropertyRepository, Repositories.PropertyRepository>();
 
             services
