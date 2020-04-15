@@ -9,14 +9,12 @@ namespace Devpro.Yanport.Abstractions.Repositories
     /// </summary>
     public interface IPropertyRepository
     {
-        // TODO: add arguments in the FindAllAsync method
-        // - from, size, marketingTypes, active, published, sort, surfaceMin, priceMax, propertyTypes, zipCodes, publicationDateMax, lastPriceUpdateDateMin, publicationDateMin, publicationDateMax
-
         /// <summary>
         /// Find all properties.
         /// </summary>
+        /// <param name="queryParameters">query parameter string, beginning with a question mark (?)</param>
         /// <returns></returns>
         /// <remarks>First search criteria will be delivered in the next release of the Client</remarks>
-        Task<List<HitModel>> FindAllAsync();
+        Task<List<HitModel>> FindAllAsync(string queryParameters = null);
     }
 }

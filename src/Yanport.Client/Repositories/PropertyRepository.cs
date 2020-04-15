@@ -16,9 +16,9 @@ namespace Devpro.Yanport.Client.Repositories
 
         protected override string ResourceName => "properties";
 
-        public async Task<List<HitModel>> FindAllAsync()
+        public async Task<List<HitModel>> FindAllAsync(string queryParameters = null)
         {
-            var url = GenerateUrl();
+            var url = GenerateUrl(arguments: queryParameters);
             var output = await GetAsync<ResultModel>(url);
             return output.Hits;
         }
