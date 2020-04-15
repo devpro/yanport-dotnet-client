@@ -27,10 +27,10 @@ namespace Devpro.Yanport.Client.UnitTests.Repositories
                 StatusCode = HttpStatusCode.OK,
                 Content = new StringContent(responseDto.ToJson())
             };
-            var repository = BuildRepository(httpResponseMessage, HttpMethod.Get, $"http://doesnotexist.nop/properties");
+            var repository = BuildRepository(httpResponseMessage, HttpMethod.Get, $"http://doesnotexist.nop/properties?from=0&size=100&marketingTypes=SALE&active=true&published=true");
 
             // Act
-            var output = await repository.FindAllAsync();
+            var output = await repository.FindAllAsync("?from=0&size=100&marketingTypes=SALE&active=true&published=true");
 
             // Assert
             output.Should().NotBeNullOrEmpty();

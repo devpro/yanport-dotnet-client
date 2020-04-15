@@ -24,7 +24,7 @@ namespace Devpro.Yanport.Client.IntegrationTests.Sandbox
             var repository = BuildRepository();
 
             // Act
-            var output = await repository.FindAllAsync();
+            var output = await repository.FindAllAsync("?from=0&size=100&marketingTypes=SALE&active=true&published=true");
 
             // Assert
             output.Should().NotBeNull();

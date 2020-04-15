@@ -1,4 +1,4 @@
-# Yanport .NET Client
+﻿# Yanport .NET Client
 
 [![Build Status](https://dev.azure.com/devprofr/open-source/_apis/build/status/libraries/yanport-dotnet-client-ci?branchName=master)](https://dev.azure.com/devprofr/open-source/_build/latest?definitionId=35&branchName=master)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=devpro.yanport.dotnetclient&metric=alert_status)](https://sonarcloud.io/dashboard?id=devpro.yanport.dotnetclient)
@@ -79,8 +79,8 @@ For integration tests, to manage the configuration (secrets) you can create a fi
 <RunSettings>
   <RunConfiguration>
     <EnvironmentVariables>
-      <Yanport_Sandbox_BaseUrl>xxx</Yanport_Sandbox_BaseUrl>
-      <Yanport_Sandbox_Token>xxx</Yanport_Sandbox_Token>
+      <Yanport__Sandbox__BaseUrl>xxx</Yanport__Sandbox__BaseUrl>
+      <Yanport__Sandbox__Token>xxx</Yanport__Sandbox__Token>
     </EnvironmentVariables>
   </RunConfiguration>
 </RunSettings>
