@@ -79,7 +79,7 @@ For integration tests, to manage the configuration (secrets) you can create a fi
 <RunSettings>
   <RunConfiguration>
     <EnvironmentVariables>
-      <Yanport__Sandbox__BaseUrl>xxx</Yanport__Sandbox__BaseUrl>
+      <Yanport__Sandbox__BaseUrl>https://api.yanport.com</Yanport__Sandbox__BaseUrl>
       <Yanport__Sandbox__Token>xxx</Yanport__Sandbox__Token>
     </EnvironmentVariables>
   </RunConfiguration>
